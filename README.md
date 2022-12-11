@@ -1,3 +1,12 @@
+# RC4Developer Website Repository
+
+This repository contains NextJS code for the RC4Developers website!
+
+A mockup of the site can be
+found [here](https://www.figma.com/file/8vnjXFtweYX7AUJwDvU86P/Website-Mockup?node-id=0%3A1&t=NYlhpxd6dUdYEyC3-1).
+
+Do checkout the `docs` directory for further readings and onboarding if you are a new developer!
+
 ## Getting Started
 
 Here are a list of bash commands available:
@@ -11,7 +20,7 @@ yarn dev
 ### Run linting and fix problems
 
 ```bash
-  yarn lint --fix
+yarn lint --fix
 ```
 
 ## Deploy on Vercel
