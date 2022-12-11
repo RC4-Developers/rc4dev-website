@@ -57,8 +57,7 @@
       "off"
     ],
     "comma-dangle": [
-      "error",
-      "always-multiline"
+      "error"
     ],
     "no-async-promise-executor": [
       "off"
