@@ -10,3 +10,9 @@ The goal is to serve as useful onboarding for future developers of this site.
 The `docs` directory contains these files (non-exhaustive):
 
 * `References.md`: Useful links that developers may find handy.
+
+## What frameworks are used to develop this site?
+
+* React-Based Web-Development Framework: [NextJS](https://nextjs.org/)
+* CSS Framework: [TailwindCSS](https://tailwindcss.com/)
+* Component Framework: [Mantine UI](https://mantine.dev/) 
