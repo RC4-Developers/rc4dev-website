@@ -10,8 +10,10 @@ import {
   Transition,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import CustomLogo from "./CustomLogo";
+import { CONFIG_LOGO_SIZE } from "../../config/HeaderMenu";
 
-const HEADER_HEIGHT = 60;
+const HEADER_HEIGHT = 100;
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -37,7 +39,7 @@ const useStyles = createStyles((theme) => ({
 
   header: {
     display: "flex",
-    justifyContent: "flex-end",
+    justifyContent: "space-between",
     alignItems: "center",
     height: "100%",
   },
@@ -86,6 +88,7 @@ export interface HeaderMenuProps {
 
 export default function HeaderMenu({ links }: HeaderMenuProps) {
   const [opened, { toggle }] = useDisclosure(false);
+  const { width, height } = CONFIG_LOGO_SIZE;
   const { classes } = useStyles();
 
   const items = links.map((link) => {
@@ -127,7 +130,11 @@ export default function HeaderMenu({ links }: HeaderMenuProps) {
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container fluid className={classes.header}>
-        <Group spacing={5} className={classes.links}>
+        <Group spacing={5}>
+          <CustomLogo imgSrc={"/nus-logo.png"} size={{ width, height }} />
+          <CustomLogo imgSrc={"/rc4-logo.png"} size={{ width, height }} />
+        </Group>
+        <Group className={classes.links} spacing={5}>
           {items}
         </Group>
 

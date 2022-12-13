@@ -1,4 +1,5 @@
 import { HeaderMenuProps } from "../components/utilities/HeaderMenu";
+import { ImageSize } from "../types/utilities/ImageSize";
 
 export const CONFIG_HEADERMENU: HeaderMenuProps = {
   links: [
@@ -19,4 +20,9 @@ export const CONFIG_HEADERMENU: HeaderMenuProps = {
       label: "Contact",
     },
   ],
+};
+
+export const CONFIG_LOGO_SIZE: ImageSize = {
+  width: 120,
+  height: 120,
 };
