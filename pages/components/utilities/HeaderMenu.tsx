@@ -37,7 +37,7 @@ const useStyles = createStyles((theme) => ({
 
   header: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "flex-end",
     alignItems: "center",
     height: "100%",
   },
@@ -80,11 +80,11 @@ const useStyles = createStyles((theme) => ({
 }));
 
 // NOTE: This component supports sub-links for each menu item. Refer to https://ui.mantine.dev/component/header-menu
-export interface HeaderProps {
+export interface HeaderMenuProps {
   links: Array<{ link: string; label: string; links?: Array<{ link: string; label: string }> }>;
 }
 
-export default function HeaderMenu({ links }: HeaderProps) {
+export default function HeaderMenu({ links }: HeaderMenuProps) {
   const [opened, { toggle }] = useDisclosure(false);
   const { classes } = useStyles();
 
@@ -126,7 +126,7 @@ export default function HeaderMenu({ links }: HeaderProps) {
 
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
-      <Container className={classes.header}>
+      <Container fluid className={classes.header}>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

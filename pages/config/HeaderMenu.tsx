@@ -1,6 +1,6 @@
-import { HeaderProps } from "../components/utilities/HeaderMenu";
+import { HeaderMenuProps } from "../components/utilities/HeaderMenu";
 
-export const CONFIG_HEADERMENU: HeaderProps = {
+export const CONFIG_HEADERMENU: HeaderMenuProps = {
   links: [
     {
       link: "/home",
