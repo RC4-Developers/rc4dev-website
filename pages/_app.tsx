@@ -4,7 +4,11 @@ import { MantineProvider } from "@mantine/core";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
+    <MantineProvider
+      theme={{ fontFamily: "Readex Pro, sans-serif" }}
+      withGlobalStyles
+      withNormalizeCSS
+    >
       <Component {...pageProps} />
     </MantineProvider>
   );
