@@ -131,7 +131,7 @@ export default function HeaderMenu({ links }: HeaderMenuProps) {
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container fluid className={classes.header}>
-        <Group spacing={5}>
+        <Group spacing={5} ml={20}>
           <CustomLogo imgSrc={"/nus-logo.png"} size={{ width, height }} />
           <CustomLogo imgSrc={"/rc4-logo.png"} size={{ width, height }} />
         </Group>
