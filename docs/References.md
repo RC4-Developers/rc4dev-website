@@ -11,3 +11,4 @@ List of references:
 * [Mantine](https://mantine.dev/): Component framework used to create and style many components.
 * [MantineUI](https://ui.mantine.dev/): A list of more complex UI components, built off [Mantine](https://mantine.dev/),
   used as reference for many website components.
+* [OmatsuriApp](https://omatsuri.app/color-shades-generator): Used to generate color palette from base colors
