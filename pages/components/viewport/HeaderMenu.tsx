@@ -10,7 +10,7 @@ import {
   Transition,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import CustomLogo from "./CustomLogo";
+import CustomLogo from "../utilities/CustomLogo";
 import { CONFIG_LOGO_SIZE } from "../../config/HeaderMenu";
 
 const HEADER_HEIGHT = 100;

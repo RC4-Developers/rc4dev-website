@@ -1,4 +1,4 @@
-import HeaderMenu from "./components/utilities/HeaderMenu";
+import HeaderMenu from "./components/viewport/HeaderMenu";
 import { CONFIG_HEADERMENU } from "./config/HeaderMenu";
 import { Container, createStyles } from "@mantine/core";
 

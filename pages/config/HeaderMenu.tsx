@@ -1,4 +1,4 @@
-import { HeaderMenuProps } from "../components/utilities/HeaderMenu";
+import { HeaderMenuProps } from "../components/viewport/HeaderMenu";
 import { ImageSize } from "../types/utilities/ImageSize";
 
 export const CONFIG_HEADERMENU: HeaderMenuProps = {
