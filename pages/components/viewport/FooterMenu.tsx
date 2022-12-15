@@ -1,4 +1,4 @@
-import { Anchor, Container, createStyles, Group } from "@mantine/core";
+import { Anchor, Container, createStyles, Flex, Text } from "@mantine/core";
 import { CONFIG_HEADER_FOOTER_HEIGHT } from "../../config/viewport/HeaderMenu";
 
 const useStyles = createStyles((theme) => ({
@@ -10,6 +10,7 @@ const useStyles = createStyles((theme) => ({
     alignItems: "center",
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
+    boxShadow: "inset 0px 8px 4px rgba(0, 0, 0, 0.25)",
 
     [theme.fn.smallerThan("xs")]: {
       flexDirection: "column",
@@ -24,6 +25,15 @@ const useStyles = createStyles((theme) => ({
 
   link: {
     color: theme.colors.dark[9],
+  },
+
+  linkContactUs: {
+    color: "#ffffff",
+    textDecoration: "underline",
+  },
+
+  innerFooterText: {
+    maxWidth: "65%",
   },
 }));
 
@@ -47,7 +57,18 @@ export function FooterMenu({ links }: FooterMenuProps) {
 
   return (
     <Container fluid className={classes.inner}>
-      <Group className={classes.links}>{items}</Group>
+      <Flex direction={"column"} ml={17}>
+        <Text fz={"lg"} fw={700}>
+          Join us!
+        </Text>
+        <Text fz={"sm"} className={classes.innerFooterText}>
+          We would love to see you around. Interested in joining us? Click on{" "}
+          <Anchor className={classes.linkContactUs}>Contact Us</Anchor> to find out more!
+        </Text>
+      </Flex>
+      <Flex gap={20} className={classes.links} mr={17}>
+        {items}
+      </Flex>
     </Container>
   );
 }
