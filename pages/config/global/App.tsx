@@ -2,6 +2,19 @@ import { MantineThemeOverride } from "@mantine/core";
 
 export const CONFIG_WEBSITE_THEME: MantineThemeOverride = {
   fontFamily: "Readex Pro, sans-serif",
+  fontSizes: {
+    sm: 16,
+    md: 18,
+    lg: 21,
+  },
+  headings: {
+    fontFamily: "Readex Pro, sans-serif",
+    sizes: {
+      h1: { fontSize: 34 },
+      h2: { fontSize: 30 },
+      h3: { fontSize: 24 },
+    },
+  },
   colors: {
     rc4teal: [
       "#A1C3C2",
