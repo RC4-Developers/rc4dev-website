@@ -3,29 +3,41 @@ import { MantineThemeOverride } from "@mantine/core";
 export const CONFIG_WEBSITE_THEME: MantineThemeOverride = {
   fontFamily: "Readex Pro, sans-serif",
   colors: {
-    oceanblue: [
-      "#7AD1DD",
-      "#5FCCDB",
-      "#44CADC",
-      "#2AC9DE",
-      "#1AC2D9",
-      "#11B7CD",
-      "#09ADC3",
-      "#0E99AC",
-      "#128797",
-      "#147885",
+    rc4teal: [
+      "#A1C3C2",
+      "#88BCB9",
+      "#6EB9B5",
+      "#51BBB6",
+      "#37BCB6",
+      "#23BAB3",
+      "#0FBAB2", // main
+      "#1D9892",
+      "#257E7A",
+      "#011C2A", // dark background
     ],
-    "bright-pink": [
-      "#F0BBDD",
-      "#ED9BCF",
-      "#EC7CC3",
-      "#ED5DB8",
-      "#F13EAF",
-      "#F71FA7",
-      "#FF00A1",
-      "#E00890",
-      "#C50E82",
-      "#AD1374",
+    rc4yellow: [
+      "#F8F5F0",
+      "#EBE2D0",
+      "#E5D3AE",
+      "#E5C789",
+      "#EDBF60",
+      "#FFBB30", // main
+      "#E7A929",
+      "#C9962C",
+      "#A78236",
+      "#8C713B",
+    ],
+    rc4red: [
+      "#F5EFEE",
+      "#E6D2D1",
+      "#DCB6B4",
+      "#D79794",
+      "#D87772",
+      "#E0534C", // main
+      "#CB4A43",
+      "#B04843",
+      "#954A46",
+      "#7F4946",
     ],
   },
 };
