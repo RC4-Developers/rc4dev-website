@@ -11,7 +11,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import CustomLogo from "../utilities/CustomLogo";
-import { CONFIG_LOGO_SIZE } from "../../config/HeaderMenu";
+import { CONFIG_LOGO_SIZE } from "../../config/viewport/HeaderMenu";
 
 const HEADER_HEIGHT = 100;
 

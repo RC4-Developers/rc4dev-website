@@ -1,5 +1,5 @@
-import { HeaderMenuProps } from "../components/viewport/HeaderMenu";
-import { ImageSize } from "../types/utilities/ImageSize";
+import { HeaderMenuProps } from "../../components/viewport/HeaderMenu";
+import { ImageSize } from "../../types/utilities/ImageSize";
 
 export const CONFIG_HEADERMENU: HeaderMenuProps = {
   links: [
