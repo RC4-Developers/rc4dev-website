@@ -11,9 +11,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import CustomLogo from "../utilities/CustomLogo";
-import { CONFIG_LOGO_SIZE } from "../../config/viewport/HeaderMenu";
-
-const HEADER_HEIGHT = 100;
+import { CONFIG_HEADER_FOOTER_HEIGHT, CONFIG_LOGO_SIZE } from "../../config/viewport/HeaderMenu";
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -24,7 +22,7 @@ const useStyles = createStyles((theme) => ({
 
   dropdown: {
     position: "absolute",
-    top: HEADER_HEIGHT,
+    top: CONFIG_HEADER_FOOTER_HEIGHT,
     left: 0,
     right: 0,
     zIndex: 0,
@@ -129,7 +127,7 @@ export default function HeaderMenu({ links }: HeaderMenuProps) {
   });
 
   return (
-    <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
+    <Header height={CONFIG_HEADER_FOOTER_HEIGHT} mb={120} className={classes.root}>
       <Container fluid className={classes.header}>
         <Group spacing={5} ml={20}>
           <CustomLogo imgSrc={"/nus-logo.png"} size={{ width, height }} />
