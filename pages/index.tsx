@@ -8,12 +8,12 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-export default function Home() {
+export default function Viewport(props) {
   const { classes } = useStyles();
   return (
     <Container fluid className={classes.root}>
       <HeaderMenu links={CONFIG_HEADERMENU.links} />
-      <Container></Container>
+      {props.children}
     </Container>
   );
 }
