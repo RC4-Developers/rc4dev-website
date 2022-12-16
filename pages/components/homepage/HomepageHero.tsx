@@ -29,9 +29,15 @@ export function HomepageHero() {
         We are RC4Developers.
       </Title>
       <Text size={36}>Systems Thinking, Making the Future</Text>
-      <ColorStrip height={"25%"} color={"rc4teal"} translateX={"25%"} dropShadow />
-      <ColorStrip height={"25%"} color={"rc4yellow"} translateX={"34.3%"} />
-      <ColorStrip height={"25%"} color={"rc4red"} translateX={"43.5%"} />
+      <ColorStrip
+        height={"25%"}
+        color={"rc4teal"}
+        translateX={"25%"}
+        rotate={"310deg"}
+        dropShadow
+      />
+      <ColorStrip height={"25%"} color={"rc4yellow"} rotate={"310deg"} translateX={"34.3%"} />
+      <ColorStrip height={"25%"} color={"rc4red"} rotate={"310deg"} translateX={"43.5%"} />
       <CustomLogo imgSrc={"/gear.png"} size={{ width: 80, height: 80 }} />
     </Group>
   );

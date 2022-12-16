@@ -69,8 +69,14 @@ export function FooterMenu({ links }: FooterMenuProps) {
 
   return (
     <Container fluid className={classes.root}>
-      <ColorStrip height={"100%"} color={"rc4yellow"} translateX={"41%"} dropShadow />
-      <ColorStrip height={"100%"} color={"rc4red"} translateX={"49.3%"} />
+      <ColorStrip
+        height={"100%"}
+        color={"rc4yellow"}
+        translateX={"41%"}
+        rotate={"310deg"}
+        dropShadow
+      />
+      <ColorStrip height={"100%"} color={"rc4red"} translateX={"49.3%"} rotate={"310deg"} />
       <Flex direction={"column"} ml={17} className={classes.footerText}>
         <Text fz={"lg"} fw={700}>
           Join us!
