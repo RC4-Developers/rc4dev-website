@@ -7,7 +7,7 @@ interface CustomLogoProps {
   size: ImageSize;
 }
 
-const useStyles = createStyles((theme, { height, width }: ImageSize) => ({
+const useStyles = createStyles((theme, { width, height }: ImageSize) => ({
   logo: {
     objectFit: "contain",
   },
