@@ -8,7 +8,7 @@ const useStyles = createStyles(
       backgroundColor: theme.colors[color][5],
       zIndex: 0,
       transform: `translateX(${translateX}) rotate(310deg)`,
-      boxShadow: dropShadow ? "inset 0px 25px 4px rgba(0, 0, 0, 0.25)" : "none",
+      boxShadow: dropShadow ?? false ? "inset 0px 25px 4px rgba(0, 0, 0, 0.25)" : "none",
       position: "absolute",
     },
   }),
@@ -18,10 +18,10 @@ interface ColorStripProps {
   height: string;
   color: string;
   translateX: string;
-  dropShadow: boolean;
+  dropShadow?: boolean;
 }
 
-export function ColorStrip({ height, color, translateX, dropShadow }: ColorStripProps) {
+export function ColorStrip({ height, color, translateX, dropShadow = false }: ColorStripProps) {
   const { classes } = useStyles({ height, color, translateX, dropShadow });
   return <div className={classes.rectangle}></div>;
 }
