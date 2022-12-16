@@ -74,7 +74,7 @@ export function FooterMenu({ links }: FooterMenuProps) {
         color={"rc4yellow"}
         translateX={"41%"}
         rotate={"310deg"}
-        dropShadow
+        dropShadow={"inset 0px 25px 4px rgba(0, 0, 0, 0.25)"}
       />
       <ColorStrip height={"100%"} color={"rc4red"} translateX={"49.3%"} rotate={"310deg"} />
       <Flex direction={"column"} ml={17} className={classes.footerText}>

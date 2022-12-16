@@ -34,7 +34,7 @@ export function HomepageHero() {
         color={"rc4teal"}
         translateX={"25%"}
         rotate={"310deg"}
-        dropShadow
+        dropShadow={"inset 0px 25px 4px rgba(0, 0, 0, 0.25)"}
       />
       <ColorStrip height={"25%"} color={"rc4yellow"} rotate={"310deg"} translateX={"34.3%"} />
       <ColorStrip height={"25%"} color={"rc4red"} rotate={"310deg"} translateX={"43.5%"} />
