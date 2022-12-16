@@ -35,7 +35,7 @@ export function HomepageNewsBulletinHeader() {
         </Title>
       </Grid.Col>
       <Grid.Col span={4} offset={4}>
-        <Title size={50} mt={-15}>
+        <Title size={50} mt={-15} mb={15}>
           What&apos;s New?
         </Title>
       </Grid.Col>
