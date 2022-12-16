@@ -53,7 +53,7 @@ export interface FooterMenuProps {
   links: Array<{ link: string; label: string }>;
 }
 
-export function FooterMenu({ links }: FooterMenuProps) {
+export default function FooterMenu({ links }: FooterMenuProps) {
   const { classes } = useStyles();
   const items = links.map((link) => (
     <Anchor<"a">

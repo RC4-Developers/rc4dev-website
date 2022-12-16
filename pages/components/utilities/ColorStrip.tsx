@@ -24,7 +24,7 @@ interface ColorStripProps {
   dropShadow?: string;
 }
 
-export function ColorStrip({
+export default function ColorStrip({
   height,
   width = "100%",
   zIndex = 0,

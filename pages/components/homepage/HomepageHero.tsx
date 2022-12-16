@@ -21,7 +21,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function HomepageHero() {
+export default function HomepageHero() {
   const { classes } = useStyles();
   return (
     <Group className={classes.hero}>

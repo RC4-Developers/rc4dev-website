@@ -8,7 +8,7 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-export function HomepageNewsBulletinHeader() {
+export default function HomepageNewsBulletinHeader() {
   const { classes } = useStyles();
   return (
     <Grid className={classes.newsBulletinHeader}>

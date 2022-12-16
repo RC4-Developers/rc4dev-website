@@ -19,7 +19,7 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-export function HomepageNavigationRow() {
+export default function HomepageNavigationRow() {
   const { classes } = useStyles();
   return (
     <Group spacing={0} className={classes.navigationRow} grow>
