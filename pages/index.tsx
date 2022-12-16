@@ -1,28 +1,10 @@
 import { Container, createStyles, Flex, Group, Text, Title } from "@mantine/core";
-import { ColorStrip } from "./components/utilities/ColorStrip";
-import CustomLogo from "./components/utilities/CustomLogo";
+import { HomepageHero } from "./components/homepage/HomepageHero";
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles(() => ({
   root: {
     paddingLeft: "0%",
     paddingRight: "0%",
-  },
-  hero: {
-    backgroundColor: theme.colors.rc4teal[9],
-    color: "white",
-    paddingTop: "3%",
-    paddingBottom: "2%",
-    position: "relative",
-    overflow: "hidden",
-    paddingLeft: "3%",
-  },
-  heroTitle: {
-    width: "80%",
-  },
-  heroText: {},
-  gearIcon: {
-    transform: "translateY(-10%)",
-    backgroundColor: "#FFFFFF",
   },
   navigationRow: {
     width: "100%",
@@ -46,18 +28,7 @@ export default function Homepage() {
   const { classes } = useStyles();
   return (
     <Container fluid className={classes.root}>
-      <Group className={classes.hero}>
-        <Title size={98} className={classes.heroTitle}>
-          We are RC4Developers.
-        </Title>
-        <Text size={36} className={classes.heroText}>
-          Systems Thinking, Making the Future
-        </Text>
-        <ColorStrip height={"25%"} color={"rc4teal"} translateX={"25%"} dropShadow />
-        <ColorStrip height={"25%"} color={"rc4yellow"} translateX={"34.3%"} />
-        <ColorStrip height={"25%"} color={"rc4red"} translateX={"43.5%"} />
-        <CustomLogo imgSrc={"/gear.png"} size={{ width: 80, height: 80 }} />
-      </Group>
+      <HomepageHero />
 
       <Group spacing={0} className={classes.navigationRow} grow>
         <Flex
@@ -92,6 +63,11 @@ export default function Homepage() {
             What do we do?
           </Text>
         </Flex>
+      </Group>
+
+      <Group className>
+        <Title size={57}>News Bulletin</Title>
+        <Title size={57}>What&apos;s New?</Title>
       </Group>
     </Container>
   );
