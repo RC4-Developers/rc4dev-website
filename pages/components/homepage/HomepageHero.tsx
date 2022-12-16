@@ -1,5 +1,5 @@
 import { createStyles, Group, Text, Title } from "@mantine/core";
-import { ColorStrip } from "../utilities/ColorStrip";
+import ColorStrip from "../utilities/ColorStrip";
 import CustomLogo from "../utilities/CustomLogo";
 
 const useStyles = createStyles((theme) => ({

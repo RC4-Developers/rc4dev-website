@@ -1,6 +1,6 @@
 import { Anchor, Container, createStyles, Flex, Text } from "@mantine/core";
 import { CONFIG_HEADER_FOOTER_HEIGHT } from "../../config/viewport/HeaderMenu";
-import { ColorStrip } from "../utilities/ColorStrip";
+import ColorStrip from "../utilities/ColorStrip";
 
 const useStyles = createStyles((theme) => ({
   root: {

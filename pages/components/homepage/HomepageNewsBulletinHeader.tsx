@@ -1,5 +1,5 @@
 import { createStyles, Grid, Title } from "@mantine/core";
-import { ColorStrip } from "../utilities/ColorStrip";
+import ColorStrip from "../utilities/ColorStrip";
 
 const useStyles = createStyles(() => ({
   newsBulletinHeader: {

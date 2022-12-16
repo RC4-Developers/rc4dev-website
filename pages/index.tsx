@@ -1,7 +1,7 @@
 import { Container, createStyles } from "@mantine/core";
-import { HomepageHero } from "./components/homepage/HomepageHero";
-import { HomepageNavigationRow } from "./components/homepage/HomepageNavigationRow";
-import { HomepageNewsBulletinHeader } from "./components/homepage/HomepageNewsBulletinHeader";
+import HomepageHero from "./components/homepage/HomepageHero";
+import HomepageNavigationRow from "./components/homepage/HomepageNavigationRow";
+import HomepageNewsBulletinHeader from "./components/homepage/HomepageNewsBulletinHeader";
 
 const useStyles = createStyles(() => ({
   root: {
