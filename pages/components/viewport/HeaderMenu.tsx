@@ -15,9 +15,10 @@ import { CONFIG_HEADER_FOOTER_HEIGHT, CONFIG_LOGO_SIZE } from "../../config/view
 
 const useStyles = createStyles((theme) => ({
   root: {
-    position: "relative",
+    position: "sticky",
     zIndex: 1,
     boxShadow: "0px 8px 4px rgba(0, 0, 0, 0.25)",
+    marginBottom: "0px!important", // Bad practice, but some component is adding "margin-bottom: 120px"
   },
 
   dropdown: {
