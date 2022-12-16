@@ -1,8 +1,9 @@
 import { Anchor, Container, createStyles, Flex, Text } from "@mantine/core";
 import { CONFIG_HEADER_FOOTER_HEIGHT } from "../../config/viewport/HeaderMenu";
+import { ColorStrip } from "../utilities/ColorStrip";
 
 const useStyles = createStyles((theme) => ({
-  inner: {
+  root: {
     backgroundColor: theme.colors.rc4teal[6],
     height: CONFIG_HEADER_FOOTER_HEIGHT,
     display: "flex",
@@ -11,6 +12,11 @@ const useStyles = createStyles((theme) => ({
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
     boxShadow: "inset 0px 8px 4px rgba(0, 0, 0, 0.25)",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    overflow: "hidden",
+    position: "relative",
 
     [theme.fn.smallerThan("xs")]: {
       flexDirection: "column",
@@ -18,6 +24,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   links: {
+    zIndex: 1,
     [theme.fn.smallerThan("xs")]: {
       marginTop: theme.spacing.md,
     },
@@ -28,8 +35,13 @@ const useStyles = createStyles((theme) => ({
   },
 
   linkContactUs: {
-    color: "#ffffff",
     textDecoration: "underline",
+    fontWeight: "bold",
+    color: "#ffffff",
+  },
+
+  footerText: {
+    color: "#ffffff",
   },
 
   innerFooterText: {
@@ -56,8 +68,11 @@ export function FooterMenu({ links }: FooterMenuProps) {
   ));
 
   return (
-    <Container fluid className={classes.inner}>
-      <Flex direction={"column"} ml={17}>
+    <Container fluid className={classes.root}>
+      {/*<div className={classes.rectangle}></div>*/}
+      <ColorStrip height={"100%"} color={"rc4yellow"} translateX={"41%"} dropShadow />
+      <ColorStrip height={"100%"} color={"rc4red"} translateX={"49.3%"} dropShadow={false} />
+      <Flex direction={"column"} ml={17} className={classes.footerText}>
         <Text fz={"lg"} fw={700}>
           Join us!
         </Text>
