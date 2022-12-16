@@ -1,5 +1,6 @@
-import { Container, createStyles, Flex, Group, Text, Title } from "@mantine/core";
+import { Container, createStyles, Group, Title } from "@mantine/core";
 import { HomepageHero } from "./components/homepage/HomepageHero";
+import { HomepageNavigationRow } from "./components/homepage/HomepageNavigationRow";
 
 const useStyles = createStyles(() => ({
   root: {
@@ -29,41 +30,7 @@ export default function Homepage() {
   return (
     <Container fluid className={classes.root}>
       <HomepageHero />
-
-      <Group spacing={0} className={classes.navigationRow} grow>
-        <Flex
-          className={classes.navigationBox}
-          style={{
-            backgroundImage: "url(/who.png)",
-          }}
-        >
-          <Text
-            size={30}
-            className={classes.navigationLabel}
-            style={{
-              backgroundColor: "rgba(224, 83, 76, 0.7)",
-            }}
-          >
-            Who are we?
-          </Text>
-        </Flex>
-        <Flex
-          className={classes.navigationBox}
-          style={{
-            backgroundImage: "url(/what.png)",
-          }}
-        >
-          <Text
-            size={30}
-            className={classes.navigationLabel}
-            style={{
-              backgroundColor: "rgba(255, 187, 48, 0.7);",
-            }}
-          >
-            What do we do?
-          </Text>
-        </Flex>
-      </Group>
+      <HomepageNavigationRow />
 
       <Group className>
         <Title size={57}>News Bulletin</Title>
