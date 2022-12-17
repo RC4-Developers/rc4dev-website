@@ -11,7 +11,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import CustomLogo from "../utilities/CustomLogo";
-import { CONFIG_HEADER_FOOTER_HEIGHT, CONFIG_LOGO_SIZE } from "../../config/viewport/HeaderMenu";
+import { CONFIG_HEADER_FOOTER_HEIGHT, CONFIG_LOGO_SIZE } from "../../../config/viewport/HeaderMenu";
 
 const useStyles = createStyles((theme) => ({
   root: {

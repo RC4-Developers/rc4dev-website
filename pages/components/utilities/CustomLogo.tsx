@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { createStyles } from "@mantine/core";
-import { ImageSize } from "../../types/utilities/ImageSize";
+import { ImageSize } from "../../../types/utilities/ImageSize";
 
 interface CustomLogoProps {
   imgSrc: string;

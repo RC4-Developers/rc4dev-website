@@ -1,4 +1,4 @@
-import { FooterMenuProps } from "../../components/viewport/FooterMenu";
+import { FooterMenuProps } from "../../pages/components/viewport/FooterMenu";
 
 export const CONFIG_FOOTERMENU: FooterMenuProps = {
   links: [

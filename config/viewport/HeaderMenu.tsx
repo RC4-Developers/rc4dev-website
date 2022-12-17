@@ -1,4 +1,4 @@
-import { HeaderMenuProps } from "../../components/viewport/HeaderMenu";
+import { HeaderMenuProps } from "../../pages/components/viewport/HeaderMenu";
 import { ImageSize } from "../../types/utilities/ImageSize";
 
 export const CONFIG_HEADER_FOOTER_HEIGHT = 122;
