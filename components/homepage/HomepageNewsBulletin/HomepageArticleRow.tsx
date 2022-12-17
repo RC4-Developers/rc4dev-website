@@ -8,13 +8,18 @@ const useStyles = createStyles(() => ({
   image: {
     alignSelf: "center",
   },
+  articleDesc: {
+    width: "300%",
+    marginRight: "5%",
+    marginLeft: "5%",
+  },
 }));
 
 export default function HomepageArticleRow() {
   const { classes } = useStyles();
   return (
-    <Flex className={classes.root} pt={"1%"} pb={"1%"}>
-      <Flex direction={"column"} pr={"30%"} pl={"5%"}>
+    <Flex className={classes.root} pt={"2%"} pb={"2%"}>
+      <Flex direction={"column"} className={classes.articleDesc}>
         <Text fz={"lg"} fw={700}>
           Sample Header
         </Text>
@@ -31,8 +36,8 @@ export default function HomepageArticleRow() {
       <Image
         className={classes.image}
         radius={"md"}
-        width={"120%"}
-        height={"200px"}
+        width={"200%"}
+        height={"190px"}
         mr={"4%"}
         src={
           "https://images.unsplash.com/photo-1511216335778-7cb8f49fa7a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
