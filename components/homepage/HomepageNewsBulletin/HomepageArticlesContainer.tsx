@@ -3,7 +3,7 @@ import HomepageArticleRow from "components/homepage/HomepageNewsBulletin/Homepag
 
 export default function HomepageArticlesContainer() {
   return (
-    <Container fluid mt={50}>
+    <Container fluid mt={10}>
       <HomepageArticleRow />
       <HomepageArticleRow />
       <HomepageArticleRow />
