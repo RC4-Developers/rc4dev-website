@@ -21,7 +21,7 @@ const useStyles = createStyles((theme, { width, height }: ImageSize) => ({
 function CustomLogo(props: CustomLogoProps) {
   const {
     imgSrc,
-    size: { width, height },
+    size: { width = 100, height = 100 },
   } = props;
   const { classes } = useStyles({ width, height });
   return (

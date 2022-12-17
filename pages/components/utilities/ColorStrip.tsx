@@ -25,7 +25,7 @@ interface ColorStripProps {
 }
 
 export default function ColorStrip({
-  height,
+  height = "100%",
   width = "100%",
   zIndex = 0,
   color,
