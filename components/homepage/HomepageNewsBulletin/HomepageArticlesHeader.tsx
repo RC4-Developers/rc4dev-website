@@ -9,17 +9,20 @@ const useStyles = createStyles(() => ({
     borderBottom: "1px solid #000000",
     margin: 0,
   },
+  textContainer: {
+    display: "flex",
+    justifyContent: "center",
+  },
 }));
 
-export default function HomepageArticlesHeader() {
-  const { classes } = useStyles();
+function ColorStrips() {
   return (
-    <Grid className={classes.root}>
+    <div>
       <ColorStrip
         height={"70%"}
-        width={"120%"}
+        width={"200%"}
         color={"rc4yellow"}
-        translateX={"-46%"}
+        translateX={"-50%"}
         rotate={"-7.5deg"}
         zIndex={-1}
         dropShadow={"0px 4px 4px rgba(0, 0, 0, 0.25)"}
@@ -32,12 +35,21 @@ export default function HomepageArticlesHeader() {
         rotate={"9.5deg"}
         zIndex={-2}
       />
+    </div>
+  );
+}
+
+export default function HomepageArticlesHeader() {
+  const { classes } = useStyles();
+  return (
+    <Grid className={classes.root}>
+      <ColorStrips />
       <Grid.Col span={12}>
         <Title size={45} ml={15} mt={10}>
           News Bulletin
         </Title>
       </Grid.Col>
-      <Grid.Col span={4} offset={4}>
+      <Grid.Col span={4} offset={4} className={classes.textContainer}>
         <Title size={50} mt={-15} mb={15}>
           What&apos;s New?
         </Title>
