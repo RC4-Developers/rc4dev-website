@@ -49,7 +49,7 @@ export default function HomepageNavigationRow() {
           size={30}
           className={classes.navigationLabel}
           style={{
-            backgroundColor: "rgba(255, 187, 48, 0.7);",
+            backgroundColor: "rgba(255, 187, 48, 0.7)",
           }}
         >
           What do we do?
