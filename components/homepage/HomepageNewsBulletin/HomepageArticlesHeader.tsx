@@ -2,16 +2,18 @@ import { createStyles, Grid, Title } from "@mantine/core";
 import ColorStrip from "components/utilities/ColorStrip";
 
 const useStyles = createStyles(() => ({
-  newsBulletinHeader: {
+  root: {
     position: "relative",
     overflow: "hidden",
+    paddingBottom: "1%",
+    borderBottom: "1px solid #000000",
   },
 }));
 
 export default function HomepageArticlesHeader() {
   const { classes } = useStyles();
   return (
-    <Grid className={classes.newsBulletinHeader}>
+    <Grid className={classes.root}>
       <ColorStrip
         height={"70%"}
         width={"120%"}
