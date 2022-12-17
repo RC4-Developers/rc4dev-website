@@ -1,6 +1,6 @@
 import { createStyles, Group, Text, Title } from "@mantine/core";
-import ColorStrip from "../utilities/ColorStrip";
-import CustomLogo from "../utilities/CustomLogo";
+import ColorStrip from "pages/components/utilities/ColorStrip";
+import CustomLogo from "pages/components/utilities/CustomLogo";
 
 const useStyles = createStyles((theme) => ({
   hero: {
