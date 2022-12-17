@@ -9,8 +9,9 @@ import { CONFIG_FOOTERMENU } from "config/viewport/FooterMenu";
 
 const useStyles = createStyles(() => ({
   root: {
-    padding: 0,
     height: "fit-content",
+    paddingLeft: "0%",
+    paddingRight: "0%",
   },
 }));
 

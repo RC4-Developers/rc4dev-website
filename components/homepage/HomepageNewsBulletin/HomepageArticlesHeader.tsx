@@ -7,6 +7,7 @@ const useStyles = createStyles(() => ({
     overflow: "hidden",
     paddingBottom: "1%",
     borderBottom: "1px solid #000000",
+    margin: 0,
   },
 }));
 
