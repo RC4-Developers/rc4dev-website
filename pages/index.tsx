@@ -1,7 +1,8 @@
 import { Container, createStyles } from "@mantine/core";
 import HomepageHero from "components/homepage/HomepageHero";
 import HomepageNavigationRow from "components/homepage/HomepageNavigationRow";
-import HomepageNewsBulletinHeader from "components/homepage/HomepageNewsBulletinHeader";
+import HomepageArticlesHeader from "components/homepage/HomepageNewsBulletin/HomepageArticlesHeader";
+import HomepageArticlesContainer from "components/homepage/HomepageNewsBulletin/HomepageArticlesContainer";
 
 const useStyles = createStyles(() => ({
   container: {
@@ -26,7 +27,8 @@ export default function Homepage() {
     <Container fluid className={classes.root}>
       <HomepageHero />
       <HomepageNavigationRow />
-      <HomepageNewsBulletinHeader />
+      <HomepageArticlesHeader />
+      <HomepageArticlesContainer />
     </Container>
   );
 }
