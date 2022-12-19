@@ -6,11 +6,11 @@ export const CONFIG_HEADER_FOOTER_HEIGHT = 122;
 export const CONFIG_HEADERMENU: HeaderMenuProps = {
   links: [
     {
-      link: "/home",
+      link: "/",
       label: "Home",
     },
     {
-      link: "/aboutUs",
+      link: "/about-us",
       label: "About Us",
     },
     {

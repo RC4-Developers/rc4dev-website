@@ -3,11 +3,11 @@ import { FooterMenuProps } from "components/viewport/FooterMenu";
 export const CONFIG_FOOTERMENU: FooterMenuProps = {
   links: [
     {
-      link: "/home",
+      link: "/",
       label: "Home",
     },
     {
-      link: "/aboutUs",
+      link: "/about-us",
       label: "About Us",
     },
     {

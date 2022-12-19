@@ -1,4 +1,5 @@
 import {
+  Anchor,
   Burger,
   Center,
   Container,
@@ -100,15 +101,11 @@ export default function HeaderMenu({ links }: HeaderMenuProps) {
       return (
         <Menu key={link.label} trigger="hover" exitTransitionDuration={0}>
           <Menu.Target>
-            <a
-              href={link.link}
-              className={classes.link}
-              onClick={(event) => event.preventDefault()}
-            >
+            <Anchor href={link.link} className={classes.link}>
               <Center>
                 <span className={classes.linkLabel}>{link.label}</span>
               </Center>
-            </a>
+            </Anchor>
           </Menu.Target>
           <Menu.Dropdown>{menuItems}</Menu.Dropdown>
         </Menu>
@@ -116,14 +113,9 @@ export default function HeaderMenu({ links }: HeaderMenuProps) {
     }
 
     return (
-      <a
-        key={link.label}
-        href={link.link}
-        className={classes.link}
-        onClick={(event) => event.preventDefault()}
-      >
+      <Anchor key={link.label} href={link.link} className={classes.link}>
         {link.label}
-      </a>
+      </Anchor>
     );
   });
 
