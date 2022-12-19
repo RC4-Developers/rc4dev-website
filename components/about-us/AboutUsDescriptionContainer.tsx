@@ -28,10 +28,10 @@ const useStyles = createStyles((theme) => ({
   },
   title: {
     fontWeight: "bold",
-    fontSize: "2.8vh",
+    fontSize: "2.9vh",
   },
   desc: {
-    fontSize: "1.7vh",
+    fontSize: "2vh",
     width: "70vw",
     marginTop: "1em",
   },
