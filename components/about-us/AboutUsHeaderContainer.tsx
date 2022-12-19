@@ -1,6 +1,7 @@
 import { createStyles, Flex, Text } from "@mantine/core";
 import CustomLogo from "components/utilities/CustomLogo";
 import ColorStrip from "components/utilities/ColorStrip";
+import AboutUsDescriptionContainer from "components/about-us/AboutUsDescriptionContainer";
 
 const useStyles = createStyles(() => ({
   titleContainer: {
@@ -23,7 +24,7 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-export default function AboutUsTitleContainer() {
+export default function AboutUsHeaderContainer() {
   const { classes } = useStyles();
   return (
     <Flex className={classes.titleContainer}>
@@ -41,6 +42,7 @@ export default function AboutUsTitleContainer() {
         translateY={"-15vw"}
         rotate={"30deg"}
       />
+      <AboutUsDescriptionContainer />
     </Flex>
   );
 }
