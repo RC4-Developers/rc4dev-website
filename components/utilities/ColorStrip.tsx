@@ -8,6 +8,7 @@ const useStyles = createStyles(
       width,
       zIndex,
       color,
+      colorPaletteIndex,
       translateX,
       translateY,
       rotate,
@@ -19,7 +20,7 @@ const useStyles = createStyles(
     rectangle: {
       height,
       width, // necessary to allow rectangle to appear. see https://www.codecademy.com/forum_questions/51015b60b85830d9c1005c22
-      backgroundColor: theme.colors[color ?? "rc4teal"][5],
+      backgroundColor: theme.colors[color ?? "rc4teal"][colorPaletteIndex ?? 5],
       zIndex,
       transform: `translateX(${translateX ?? "0%"}) translateY(${translateY ?? "0%"}) rotate(${
         rotate ?? "0deg"
@@ -36,6 +37,7 @@ interface ColorStripProps {
   width?: string;
   zIndex?: number;
   color?: string;
+  colorPaletteIndex?: number;
   translateX?: string;
   translateY?: string;
   rotate?: string;
@@ -49,6 +51,7 @@ export default function ColorStrip({
   width = "100%",
   zIndex = 0,
   color = "rc4teal",
+  colorPaletteIndex = 5,
   translateX = "0",
   translateY = "0",
   rotate = "0deg",
@@ -61,6 +64,7 @@ export default function ColorStrip({
     width,
     zIndex,
     color,
+    colorPaletteIndex,
     translateX,
     translateY,
     rotate,
