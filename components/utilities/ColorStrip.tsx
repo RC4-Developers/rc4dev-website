@@ -9,7 +9,9 @@ const useStyles = createStyles(
       zIndex,
       color,
       translateX,
+      translateY,
       rotate,
+      rotateOrigin,
       dropShadow,
       isPositionAbsolute,
     }: ColorStripProps,
@@ -19,7 +21,10 @@ const useStyles = createStyles(
       width, // necessary to allow rectangle to appear. see https://www.codecademy.com/forum_questions/51015b60b85830d9c1005c22
       backgroundColor: theme.colors[color ?? "rc4teal"][5],
       zIndex,
-      transform: `translateX(${translateX ?? "0%"}) rotate(${rotate ?? "0deg"})`,
+      transform: `translateX(${translateX ?? "0%"}) translateY(${translateY ?? "0%"}) rotate(${
+        rotate ?? "0deg"
+      })`,
+      transformOrigin: rotateOrigin ?? "center",
       boxShadow: dropShadow,
       position: isPositionAbsolute ?? true ? "absolute" : "static",
     },
@@ -32,7 +37,9 @@ interface ColorStripProps {
   zIndex?: number;
   color?: string;
   translateX?: string;
+  translateY?: string;
   rotate?: string;
+  rotateOrigin?: string;
   dropShadow?: string;
   isPositionAbsolute?: boolean; // Unable to pass position as a string, so have to resort to boolean value
 }
@@ -43,7 +50,9 @@ export default function ColorStrip({
   zIndex = 0,
   color = "rc4teal",
   translateX = "0",
+  translateY = "0",
   rotate = "0deg",
+  rotateOrigin = "center",
   dropShadow = "none",
   isPositionAbsolute = true,
 }: ColorStripProps) {
@@ -53,7 +62,9 @@ export default function ColorStrip({
     zIndex,
     color,
     translateX,
+    translateY,
     rotate,
+    rotateOrigin,
     dropShadow,
     isPositionAbsolute,
   });
