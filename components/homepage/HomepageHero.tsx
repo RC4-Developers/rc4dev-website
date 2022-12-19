@@ -51,7 +51,7 @@ export default function HomepageHero() {
       <Flex className={classes.heroTitle} pl={50} pt={15}>
         <Flex align={"center"} justify={"flex-start"}>
           <Title className={classes.heroTitle}>We are</Title>
-          <CustomLogo imgSrc={"/gear.png"} size={{ width: 100, height: 100 }} />
+          <CustomLogo imgSrc={"/gear-light.png"} size={{ width: 100, height: 100 }} />
         </Flex>
         <Title className={classes.heroTitle}>RC4Developers.</Title>
         <Text className={classes.heroSubtitle}>Systems Thinking, Making the Future</Text>
