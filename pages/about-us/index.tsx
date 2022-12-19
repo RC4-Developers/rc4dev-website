@@ -1,6 +1,5 @@
-import { createStyles, Flex, Text } from "@mantine/core";
-import CustomLogo from "components/utilities/CustomLogo";
-import ColorStrip from "components/utilities/ColorStrip";
+import { createStyles, Flex } from "@mantine/core";
+import AboutUsTitleContainer from "components/about-us/AboutUsTitleContainer";
 
 const useStyles = createStyles(() => ({
   root: {
@@ -24,29 +23,13 @@ const useStyles = createStyles(() => ({
     fontSize: "5vw",
     alignItems: "center",
   },
-  stripYellow: {},
 }));
 
 export default function AboutUs() {
   const { classes } = useStyles();
   return (
     <Flex className={classes.root}>
-      <Flex className={classes.titleContainer}>
-        <Text className={classes.subtitle}>About Us</Text>
-        <Flex className={classes.title}>
-          <Text mr={20}>RC4Developers</Text>
-          <CustomLogo imgSrc={"/gear-dark.png"} size={{ width: 120, height: 120 }} />
-        </Flex>
-        <ColorStrip
-          width={"50vw"}
-          height={"100vw"}
-          color={"rc4yellow"}
-          zIndex={-1}
-          translateX={"55vw"}
-          translateY={"-15vw"}
-          rotate={"30deg"}
-        />
-      </Flex>
+      <AboutUsTitleContainer />
     </Flex>
   );
 }
