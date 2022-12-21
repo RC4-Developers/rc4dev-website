@@ -26,7 +26,6 @@ export default function MembersContainer() {
   const { classes } = useStyles();
   return (
     <Container className={classes.root}>
-      <Text className={classes.subtitle}>Who are we?</Text>
       <Text className={classes.title}>EXCO</Text>
       <MemberRow people={CONFIG_EXCO} />
       <Text className={classes.title}>Members</Text>
