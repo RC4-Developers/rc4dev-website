@@ -1,4 +1,4 @@
-import { createStyles, Flex, Image, Text } from "@mantine/core";
+import { createStyles, Flex, Text } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -8,18 +8,19 @@ const useStyles = createStyles((theme) => ({
   },
   strip: {
     marginTop: "2rem",
-    borderTop: `10px solid ${theme.colors.rc4teal[5]}`,
-    backgroundColor: theme.colors.rc4teal[9],
-    rotate: "2deg",
+    borderTop: `10px solid ${theme.colors.rc4yellow[5]}`,
+    borderBottom: `10px solid ${theme.colors.rc4yellow[5]}`,
+    backgroundColor: theme.colors.rc4red[5],
+    rotate: "-4deg",
     width: "105vw",
-    height: "40vh",
+    height: "45vh",
     transform: "translateX(-1em)",
     position: "absolute",
   },
   textContainer: {
     flexDirection: "column",
     color: "#FFFFFF",
-    marginTop: "5rem",
+    marginTop: "9rem",
     marginLeft: "2em",
     position: "relative",
   },
@@ -42,30 +43,28 @@ function CustomStrip() {
   return <div className={classes.strip}></div>;
 }
 
-export default function AboutUsDescriptionContainer() {
+export default function ProjectsDescriptionContainer() {
   const { classes } = useStyles();
   return (
     <Flex className={classes.root}>
       <CustomStrip />
       <Flex className={classes.textContainer}>
-        <Text className={classes.title}>What do we do?</Text>
+        <Text className={classes.title}>Our Projects</Text>
         <Text className={classes.desc}>
           Lorem ipsum dolor sit amet consectetur. Cursus vel vitae iaculis bibendum mauris proin at
           elementum proin. Dictum in neque aenean tempor varius adipiscing. Eget nunc massa aliquam
           pretium enim semper leo. Vitae diam tellus vitae mi. Sed sit purus sed mi ultrices. Sapien
           nibh condimentum ipsum eget accumsan lorem. Elit integer suspendisse egestas convallis
           netus neque. Lectus tellus nunc imperdiet condimentum ut vitae volutpat vitae pharetra. Et
-          leo quis ipsum urna viverra aliquet.
+          leo quis ipsum urna viverra aliquet. Lorem ipsum dolor sit amet consectetur. Cursus vel
+          vitae iaculis bibendum mauris proin at elementum proin. Dictum in neque aenean tempor
+          varius adipiscing. Eget nunc massa aliquam pretium enim semper leo. Vitae diam tellus
+          vitae mi. Sed sit purus sed mi ultrices. Sapien nibh condimentum ipsum eget accumsan
+          lorem. Elit integer suspendisse egestas convallis netus neque. Lectus tellus nunc
+          imperdiet condimentum ut vitae volutpat vitae pharetra. Et leo quis ipsum urna viverra
+          aliquet.
         </Text>
       </Flex>
-      <Image
-        className={classes.image}
-        width={"60%"}
-        mb={40}
-        src="https://images.unsplash.com/photo-1511216335778-7cb8f49fa7a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
-        alt="Random unsplash image"
-        ml={30}
-      />
     </Flex>
   );
 }

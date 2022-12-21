@@ -1,8 +1,8 @@
+import ColorStrip from "components/utilities/ColorStrip";
 import { createStyles, Flex, Text } from "@mantine/core";
 import CustomLogo from "components/utilities/CustomLogo";
-import ColorStrip from "components/utilities/ColorStrip";
-import AboutUsDescriptionContainer from "components/about-us/AboutUsDescriptionContainer";
-import MembersContainer from "components/about-us/Members/MembersContainer";
+import ProjectsContainer from "components/projects/Projects/ProjectsContainer";
+import ProjectsDescriptionContainer from "components/projects/ProjectsDescriptionContainer";
 
 const useStyles = createStyles(() => ({
   root: {
@@ -25,26 +25,26 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-export default function AboutUs() {
+export default function Projects() {
   const { classes } = useStyles();
   return (
     <Flex className={classes.root}>
-      <Text className={classes.subtitle}>About Us</Text>
+      <Text className={classes.subtitle}>Projects</Text>
       <Flex className={classes.title}>
         <Text mr={20}>RC4Developers</Text>
         <CustomLogo imgSrc={"/gear-dark.png"} size={{ width: 120, height: 120 }} />
       </Flex>
       <ColorStrip
         width={"45vw"}
-        height={"50vw"}
-        color={"rc4yellow"}
+        height={"45vw"}
+        color={"rc4teal"}
         zIndex={-1}
         translateX={"60vw"}
         translateY={"-17vw"}
         rotate={"20deg"}
       />
-      <AboutUsDescriptionContainer />
-      <MembersContainer />
+      <ProjectsDescriptionContainer />
+      <ProjectsContainer />
     </Flex>
   );
 }
