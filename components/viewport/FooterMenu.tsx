@@ -56,13 +56,7 @@ export interface FooterMenuProps {
 export default function FooterMenu({ links }: FooterMenuProps) {
   const { classes } = useStyles();
   const items = links.map((link) => (
-    <Anchor<"a">
-      className={classes.link}
-      key={link.label}
-      href={link.link}
-      onClick={(event) => event.preventDefault()}
-      size="sm"
-    >
+    <Anchor<"a"> className={classes.link} key={link.label} href={link.link} size="sm">
       {link.label}
     </Anchor>
   ));
