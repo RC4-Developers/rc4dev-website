@@ -12,7 +12,7 @@ const useStyles = createStyles((theme) => ({
     backgroundColor: theme.colors.rc4teal[9],
     rotate: "2deg",
     width: "105vw",
-    height: "15%",
+    height: "40vh",
     transform: "translateX(-1em)",
     position: "absolute",
   },
