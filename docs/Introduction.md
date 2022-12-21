@@ -10,6 +10,7 @@ The goal is to serve as useful onboarding for future developers of this site.
 The `docs` directory contains these files (non-exhaustive):
 
 * `References.md`: Useful links that developers may find handy.
+* `Troubleshooting.md`: Useful links that developers may find handy.
 
 ## What frameworks are used to develop this site?
 

@@ -9,13 +9,30 @@ Do checkout the `docs` directory for further readings and onboarding if you are 
 
 ## Getting Started
 
-Here are a list of bash commands available:
+When running the codebase for the first time, you will need to install the dependencies. This can be done by running the
+following command:
 
-### Run the development server.
+```bash
+yarn install
+```
+
+After the dependencies are installed, you can run the codebase by running the following command:
+
+### Run the development server
 
 ```bash
 yarn dev
 ```
+
+## Contributing to the Codebase
+
+This codebase uses the [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/) branching model. Please read
+the [contributing guidelines](docs/Contributing.md) before contributing to the codebase.
+
+After pushing to the codebase, Vercel will automatically deploy the codebase to a preview URL. You can find the preview
+URL in the Vercel dashboard, or in the PR page.
+
+NOTE: Githooks and GitHub Actions, which will include linting, will be added to the codebase in the future.
 
 ### Run linting and fix problems
 
@@ -23,15 +40,15 @@ yarn dev
 yarn lint --fix
 ```
 
-## Deploy on Vercel
+## Deployment on Vercel
 
-The easiest way to deploy your Next.js app is to use
+This codebase uses
 the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
+for deployment.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Additional Readings
 
 Read [the reference](https://gist.github.com/pedrouid/71bb2d8b263731492dabfa302e7c6b67) used to
-configure `eslintrc.json`.
+configure `eslintrc.json`. Alternatively, check out [References](docs/References.md) for further reading.
