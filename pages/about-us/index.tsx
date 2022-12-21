@@ -5,7 +5,7 @@ import AboutUsDescriptionContainer from "components/about-us/AboutUsDescriptionC
 import MembersContainer from "components/about-us/Members/MembersContainer";
 
 const useStyles = createStyles(() => ({
-  titleContainer: {
+  root: {
     flexDirection: "column",
     position: "relative",
     overflow: "hidden",
@@ -28,7 +28,7 @@ const useStyles = createStyles(() => ({
 export default function AboutUs() {
   const { classes } = useStyles();
   return (
-    <Flex className={classes.titleContainer}>
+    <Flex className={classes.root}>
       <Text className={classes.subtitle}>About Us</Text>
       <Flex className={classes.title}>
         <Text mr={20}>RC4Developers</Text>
