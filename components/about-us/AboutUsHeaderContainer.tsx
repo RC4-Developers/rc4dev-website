@@ -2,6 +2,7 @@ import { createStyles, Flex, Text } from "@mantine/core";
 import CustomLogo from "components/utilities/CustomLogo";
 import ColorStrip from "components/utilities/ColorStrip";
 import AboutUsDescriptionContainer from "components/about-us/AboutUsDescriptionContainer";
+import MembersContainer from "components/about-us/Members/MembersContainer";
 
 const useStyles = createStyles(() => ({
   titleContainer: {
@@ -34,15 +35,16 @@ export default function AboutUsHeaderContainer() {
         <CustomLogo imgSrc={"/gear-dark.png"} size={{ width: 120, height: 120 }} />
       </Flex>
       <ColorStrip
-        width={"50vw"}
-        height={"100vw"}
+        width={"45vw"}
+        height={"50vw"}
         color={"rc4yellow"}
         zIndex={-1}
-        translateX={"55vw"}
-        translateY={"-15vw"}
-        rotate={"30deg"}
+        translateX={"60vw"}
+        translateY={"-17vw"}
+        rotate={"20deg"}
       />
       <AboutUsDescriptionContainer />
+      <MembersContainer />
     </Flex>
   );
 }
